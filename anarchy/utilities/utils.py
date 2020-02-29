@@ -1,5 +1,13 @@
+from enum import Enum
+
+
+class Gamemode(Enum):
+    SOCCAR = 0
+    DROPSHOT = 1
+
+
 def sign(value: float) -> float:
-    return 0 if value == 0 else (1 if value > 0 else - 1)
+    return 0 if value == 0 else (1 if value > 0 else -1)
 
 
 def clamp(x: float, min_: float, max_: float) -> float:
